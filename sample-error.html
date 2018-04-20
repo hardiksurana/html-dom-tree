@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="http://www.w3.org/StyleSheets/TR/W3C-REC.css" type="text/css"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>An internal stylesheet example</title>
+<style type="text/css" id="internalStyle1">
+  code {
+    color: green;
+    font-family: monospace;
+    font-weight: bold;
+  }
+</style>
+<style type="text/css" id="internalStyle2">
+<![CDATA[  code {
+    color: green;
+    font-family: monospace;
+    font-weight: bold;
+  }]]>
+</style>
+</head>
+<body>
+<p class="text" wrongattr="test">
+  This is text that uses our
+  <br />
+  <code>internal <a>stylesheet</code>.
+  <code>internal stylesheet</code>.
+</p>
+<p>
+This
+is
+a paragraph
+that needs to be
+"sentenced".
+</p> 
+<div>&#0005;</div>
+<div>&lt;xml&gt;</div>
+<wrongtag></wrongtag>
+</body>
+</html>
